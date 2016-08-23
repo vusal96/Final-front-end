@@ -1,0 +1,21 @@
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  
+  a:focus, a:active{
+    text-decoration: none;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($property, $time, $form){
+  -webkit-transition:$property $time $form;
+     -moz-transition:$property $time $form;
+       -o-transition:$property $time $form;
+          transition:$property $time $form;
+}

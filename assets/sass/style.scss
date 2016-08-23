@@ -1,0 +1,20 @@
+@import "_sass/variables";
+@import "_sass/mixin";
+@import "_sass/header";
+@import "_sass/home";
+@import "_sass/about";
+@import "_sass/feature";
+@import "_sass/feedback";
+@import "_sass/contact";
+@import "_sass/team";
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1d1d1d;
+    line-height: 1.5625;
+    background: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

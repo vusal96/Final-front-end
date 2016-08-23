@@ -1,0 +1,145 @@
+#about{
+	background: white;
+	color:black;
+
+	h2{
+		font-size:34px;
+		font-weight:300;
+		margin:50px 0 15px 0;
+		span{
+			color:$blueColor;
+		}
+	}
+	h3{
+		font-size:46px;
+		text-transform: uppercase;
+		font-weight:300;
+		
+	}
+	h4{
+		font-size:16px;
+		text-transform: uppercase;
+		margin-top:-17px;
+	}
+	h5{
+		font-size:16px;
+		line-height: 25px;
+		margin-bottom:20px;
+	}
+	p{
+		font-size:16px;
+		line-height:25px;
+	}
+	i{
+		color:$blueColor;
+		font-size:80px;
+		margin:0;
+	}
+	img{
+		margin:0 auto;
+	}
+
+	.first{
+		padding-bottom:18px;
+		border-bottom:1px solid $borderGray;
+		.btnGroup{
+			text-transform: uppercase;
+			padding:60px 0 50px 0;
+			display: flex;
+			justify-content: center;
+			a{
+				border: 1px solid $borderGray;
+				border-right: none;
+				padding: 18px 58px;
+				@include border-radius(3px);
+				@include transition(all,0.3s,ease);
+				text-decoration: none;
+				display:inline-block;
+				color: #606060;
+				cursor: pointer;
+				&:hover,&.active{
+					background-color: $blueColor;
+					color:white;
+				}
+			}
+			a:last-child{
+					border-right: 1px solid $borderGray;
+				
+			}
+		}
+			
+		#firstTab{
+				display: none;
+
+			.btnGroup{
+				padding:30px 0 10px 0;
+
+				a{
+					border:1px solid $blueColor;
+					padding: 13px 25px;
+					margin: 10px 8px;
+					@include border-radius(4px);
+					color:$blueColor;
+
+					width: 100%;
+					&:hover, &:active{
+					background-color: $blueColor;
+					color:white;
+					}
+				} 
+			}
+		}
+
+		#secondTab{
+			display: none;
+		}
+
+		#thirdTab{
+			display: none;
+			.info{
+				margin: 40px 0;
+				.tab{
+					max-width: 270px;
+					margin: 10px auto;
+				}
+			}
+		}
+	}
+
+	.second{
+		.row{
+			padding-top:25px;
+			padding-bottom:25px;
+			&:first-child {
+				border-bottom:1px solid $borderGray;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width:1200px) {
+	#about{
+		h2{
+			font-size: 28px ;
+		}
+		.first > .btnGroup {
+			display: block !important;
+			a{
+				display: block !important;
+				width: 100%;
+			}
+		}
+	}
+}
+@media only screen and (min-width:480px) and (max-width:768px){
+	#about{
+		#firstTab{
+			.btnGroup{
+				a{
+					margin:10px 2px !important;
+					
+				} 
+			}
+		}
+	}
+}
